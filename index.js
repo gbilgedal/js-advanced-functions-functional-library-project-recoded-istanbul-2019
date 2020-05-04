@@ -13,7 +13,7 @@ const fi = (function() {
         collection.forEach((el, index) => callback(el, index, collection));
         return collection;
       }
-      
+
 
     },
 
