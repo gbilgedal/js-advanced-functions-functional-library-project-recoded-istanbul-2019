@@ -17,9 +17,16 @@ const fi = (function() {
     },
 
     map: function(collection, callback) {
-      let newCollection = collection.map(el=>{
-        return callback(value,key,callback);
-      });
+      if(typeof collection[0] == "object"){
+        let newCollection = collection.map(el=>{
+          return callback(value,key,callback);
+        });
+      }
+      else{
+        collection.forEach((el, index, callback) => callback(el, index, collection));
+        return orj;
+      }
+
       return newCollection
     },
 
