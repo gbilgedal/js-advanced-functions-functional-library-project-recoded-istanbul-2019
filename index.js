@@ -5,7 +5,7 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-      if(typeofof collection[0] === number){
+      if(typeof collection[0] === number){
         collection.forEach((el, index) => callback(value, key, collection));
         return collection;
       }
