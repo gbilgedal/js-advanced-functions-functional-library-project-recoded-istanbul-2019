@@ -10,13 +10,11 @@ const fi = (function() {
       if(typeof collection[0] == "object"){
         collection.forEach((value, key, callback) => callback(value, key, collection));
         return orj;
-      }
+      }/*
       else{
         collection.forEach((el, index, callback) => callback(el, index, collection));
         return orj;
-      }
-
-
+      }*/
     },
 
     map: function() {
