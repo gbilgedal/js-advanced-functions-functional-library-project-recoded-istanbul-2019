@@ -23,8 +23,9 @@ const fi = (function() {
         });
       }
       else{
-        collection.forEach((el, index, callback) => callback(el, index, collection));
-        return orj;
+        let newCollection = collection.map(el=>{
+          return callback(value,key,callback);
+        });
       }
 
       return newCollection
