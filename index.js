@@ -6,7 +6,7 @@ const fi = (function() {
 
     each: function(collection, callback) {
       let orj = collection
-      if(typeof collection[0] === number){
+      if(typeof collection[0] === object){
         collection.forEach((el, index) => callback(value, key, collection));
         return orj;
       }
