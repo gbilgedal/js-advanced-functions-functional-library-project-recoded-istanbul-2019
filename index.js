@@ -24,7 +24,7 @@ const fi = (function() {
       }
       else{
         let newCollection = collection.map(el=>{
-          return callback(value,key,callback);
+          return callback(value,index,callback);
         });
       }
 
