@@ -5,13 +5,14 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
+      let orj = collection
       if(typeof collection[0] === number){
         collection.forEach((el, index) => callback(value, key, collection));
-        return collection;
+        return orj;
       }
       else{
         collection.forEach((el, index) => callback(el, index, collection));
-        return collection;
+        return orj;
       }
 
 
