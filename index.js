@@ -16,8 +16,11 @@ const fi = (function() {
       }
     },
 
-    map: function() {
-
+    map: function(collection, callback) {
+      let newCollection = collection.map(el=>{
+        return callback(value,key,callback);
+      });
+      return newCollection
     },
 
     reduce: function() {
